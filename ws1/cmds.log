@@ -1,0 +1,68 @@
+    1  ls
+    2  ls -l
+    3  cd /
+    4  ls
+    5  cs ~
+    6  cs ~/
+    7  cs /usr
+    8  cd /usr
+    9  ls
+   10  cd /
+   11  cd ~
+   12  ls
+   13  exit
+   14  wget www.github.com
+   15  ls
+   16  passwd
+   17  ls
+   18  mkdir ~/ws1/
+   19  ls
+   20  cd ws1
+   21  git init
+   22  ls
+   23  ls -l
+   24  ls -a
+   25  mkdir cs131.git
+   26  ls
+   27  ls -a
+   28  rm .git
+   29  rmdir .git
+   30  rm -fr .git
+   31  ls -a
+   32  cd cs131.git
+   33  cd ~/
+   34  ls
+   35  wget www.github.com
+   36  ls
+   37  rm index.html
+   38  ls
+   39  cd ~/ws1
+   40  ls
+   41  cd cs131.git
+   42  touch history > cmds.log
+   43  ls
+   44  nano cmds.log
+   45  git init
+   46  ls -a
+   47  cd ~/
+   48  pwd
+   49  ls
+   50  cd ws1
+   51  ls -a
+   52  ls
+   53  cd ~/
+   54  ls
+   55  rm index.* 
+   56  ls
+   57  rm ws1
+   58  rmdir ws1
+   59  rm -rf ws1
+   60  ls
+   61  mkdir myproject
+   62  cd myproject
+   63  git init
+   64  ls -a
+   65  wget www.github.com
+   66  mkdir ws1
+   67  cd ws1
+   68  history > cmds.log
