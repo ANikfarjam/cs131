@@ -147,3 +147,31 @@
   147  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> result.txt
   148  cat result.txt
   149  history > cmds.log
+  150  ls
+  151  cd..
+  152  cd ..
+  153  ls -l
+  154  ls
+  155  ls -a
+  156  git status
+  157  git add ws2
+  158  git status
+  159  cd ws2
+  160  ls
+  161  git add result.txt
+  162  git add cmds.log 
+  163  git status
+  164  git commit -m "Final draft of WS2"
+  165  cat cmds.log
+  166  ls
+  167  rm result.txt 
+  168  rm cmds.log 
+  169  ls
+  170  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | tail -20 > results.txt
+  171  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> result.txt
+  172  cat results.txt
+  173  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> results.txt
+  174  ls
+  175  rm result.txt
+  176  cat results.txt
+  177  history > cmds.log
