@@ -1,0 +1,417 @@
+Script started on 2023-09-13 02:03:56-04:00
+bash-4.4$ ls
+index.html  typescript	ws1  ws2  ws3
+1) Make a directory a1 under your home directory and change to it. All your homework for this assignment will be done there.
+bash-4.4$ mkdir a1
+bash-4.4$ ls
+a1  index.html	typescript  ws1  ws2  ws3
+bash-4.4$ cd a1/
+bash-4.4$ pwd
+/mnt/scratch/ashkan23fa/myproject/a1
+2) What is your home directory path?  How did you find out (commands used)?
+bash-4.4$ echo $HOME
+/mnt/scratch/ashkan23fa
+3) What is your UID?  To what group(s) do you belong?
+im belong to gid: 1025
+
+bash-4.4$ id ashkan23fa
+uid=1025(ashkan23fa) gid=1025(ashkan23fa) groups=1025(ashkan23fa)
+4) Create a new directory "temp". Now remove execute permission for yourself. 
+bash-4.4$ mkdir temp
+bash-4.4$ ls
+temp
+bash-4.4$ chmod 677 temp
+bash-4.4$ ls -l
+total 4
+drw-rwxrwx 2 ashkan23fa ashkan23fa 4096 Sep 13 02:05 temp
+bash-4.4$ cd temp
+bash: cd: temp: Permission denied
+bash-4.4$ ls tem[K[K[K-l temp
+total 0
+
+bash-4.4$ mkdir /[Kte,[Kmp[K[K[K[K[K[K[K[K[K[Ktouch file.txt[K[K[K[K[K[K[K[K[K temp/file.txt
+touch: cannot touch 'temp/file.txt': Permission denied
+bash-4.4$ pwd
+/mnt/scratch/ashkan23fa/myproject/a1
+bash-4.4$ mkdir temp2
+bash-4.4$ mv tempt[K2 temp3[K[K[K[K[K[K[K[K[K[K[K[K[K[Kman mv
+[?1049h[22;0;0t[?1h=MV(1)                            User Commands                           MV(1)[m
+[m
+[1mNAME[0m[m
+       mv - move (rename) files[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmv [22m[[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[0m[m
+       [1mmv [22m[[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[0m[m
+       [1mmv [22m[[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m--backup[22m[=[4mCONTROL[24m][m
+              make a backup of each existing destination file[m
+[m
+       [1m-b     [22mlike [1m--backup [22mbut does not accept an argument[m
+[m
+       [1m-f[22m, [1m--force[0m[m
+              do not prompt before overwriting[m
+[7m Manual page mv(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbash-4.4$ mv temp2 temp3
+bash-4.4$ c[K,am[K[K[Kman co[Kp
+[?1049h[22;0;0t[?1h=CP(1)                            User Commands                           CP(1)[m
+[m
+[1mNAME[0m[m
+       cp - copy files and directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[22m, [1m--archive[0m[m
+              same as [1m-dR --preserve[22m=[4mall[0m[m
+[m
+       [1m--attributes-only[0m[m
+              don't copy the file data, just the attributes[m
+[m
+       [1m--backup[22m[=[4mCONTROL[24m][m
+[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[Kqq[K[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbash-4.4$ qqqman cpv temp2 temp3[C[C[C[C[C[C[C[C[C[C[C[8Pan mvkdir temp2pwd[Ktouch temp/file.txt[C[C[C[C[C[C[C[C[C[C[9Pls -l temp[3Pcd[C[C[C[C[C[2Pls -lchmod 677 temp[C[C[C[C[C[C[C[C[C[Cls[Kmkdir tempid ashkan23fa[C[C[C[C[C[C[C[C[C[C[3Pecho $HOMEpwd[Kcd a1/[4Plsmkdir a1ls[Kcut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c  | sort -nr | head -3>ws3.txt[A[C[C[C[C[C[C[C[C[C[Crm sortedjan.csv[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksort -t',' -r -k8,8 ~/myproject/ws2/taxidata/2019-01.csv>sortedjan.csv [A[C[C[C[C[C[C[C[C[C[Ccd ~/myproject/ws3[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -3 2019-01.csv[C[C[C[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ~/myproject/ws2/taxidata[C[C[C[C[C[C[C[C[C[C[C[C[Cws3[K[3@mkdir[C[C[C[Cls[Kcd myproject[C[C[C[C[C[C[C[C[C[Cls[Kmkdir ws3[3Pcd[C[C[C[C~/myproject/ws2/taxidata[C[C[C[C[C[C[C[C[C[Cls[Kcat -3 2019-01.csv[C[C[C[C[C[C[C[C[C[C[1@head[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcd ~/myproject/ws3[C[C[C[C[C[C[C[C[C[Csort -t',' -r -k8,8 ~/myproject/ws2/taxidata/2019-01.csv>sortedjan.csv [A[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Crm sortedjan.csv[C[C[C[C[C[C[C[C[C[Ccut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c  | sort -nr | head -3>ws3.txt[A[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Cmkdir a1ls[Kcd a1/[3Ppwdecho $HOMEid ashkan23fa[C[C[C[C[C[C[C[C[C[C[3Pmkdir templs[Kchmod 677 temp[C[C[C[C[C[C[C[C[C[C[9Pls -lcd temp[3@ls -l[C[C[C[C[Ctouch temp/file.txt[C[C[C[C[C[C[C[C[C[Cpwd[Kmkdir temp2[5Pan mvv temp2 temp3[C[C[C[C[C[C[C[C[C[C[C[8Pan cpv temp2 temp3[C[C[C[C[C[C[C[C[C[C[C[8Pan mvkdir temp2pwd[Ktouch temp/file.txt[C[C[C[C[C[C[C[C[C[C[9Pls -l temp[3Pcd[C[C[C[C[C[2Pls -lchmod 677 temp[C[C[C[C[C[C[C[C[C[Cls[Kmkdir tempid ashkan23fa[C[C[C[C[C[C[C[C[C[C[3Pecho $HOMEpwd[Kcd a1/[4Plsmkdir a1ls[Kcut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c  | sort -nr | head -3>ws3.txtq[A[C[C[C[C[C[C[C[C[C[Crm sortedjan.csv[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c  | sort -nr | head -3>ws3.txtq[A[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Cmkdir a1ls[K[K[Kcp te,p[K[Kmp2 temp3
+cp: cannot stat 'temp2': No such file or directory
+bash-4.4$ cp temp2 temp3[C[1@ [1@-[1@r[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kman cp
+[?1049h[22;0;0t[?1h=CP(1)                            User Commands                           CP(1)[m
+[m
+[1mNAME[0m[m
+       cp - copy files and directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[0m[m
+       [1mcp [22m[[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[22m, [1m--archive[0m[m
+              same as [1m-dR --preserve[22m=[4mall[0m[m
+[m
+       [1m--attributes-only[0m[m
+              don't copy the file data, just the attributes[m
+[m
+       [1m--backup[22m[=[4mCONTROL[24m][m
+[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              make a backup of each existing destination file[m
+[7m Manual page cp(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-b     [22mlike [1m--backup [22mbut does not accept an argument[m
+[7m Manual page cp(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--copy-contents[0m[m
+[7m Manual page cp(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              copy contents of special files when recursive[m
+[7m Manual page cp(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d     [22msame as [1m--no-dereference --preserve[22m=[4mlinks[0m[m
+[7m Manual page cp(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[22m, [1m--force[0m[m
+[7m Manual page cp(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              if an existing destination file cannot be opened, remove it  and[m
+[7m Manual page cp(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              try  again  (this  option  is ignored when the [1m-n [22moption is also[m
+[7m Manual page cp(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              used)[m
+[7m Manual page cp(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-i[22m, [1m--interactive[0m[m
+[7m Manual page cp(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              prompt before overwrite (overrides a previous [1m-n [22moption)[m
+[7m Manual page cp(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-H     [22mfollow command-line symbolic links in SOURCE[m
+[7m Manual page cp(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[22m, [1m--link[0m[m
+[7m Manual page cp(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              hard link files instead of copying[m
+[7m Manual page cp(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-L[22m, [1m--dereference[0m[m
+[7m Manual page cp(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              always follow symbolic links in SOURCE[m
+[7m Manual page cp(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-n[22m, [1m--no-clobber[0m[m
+[7m Manual page cp(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not overwrite an  existing  file  (overrides  a  previous  [1m-i[0m[m
+[7m Manual page cp(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              option)[m
+[7m Manual page cp(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-P[22m, [1m--no-dereference[0m[m
+[7m Manual page cp(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              never follow symbolic links in SOURCE[m
+[7m Manual page cp(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-p     [22msame as [1m--preserve[22m=[4mmode[24m,ownership,timestamps[m
+[7m Manual page cp(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--preserve[22m[=[4mATTR_LIST[24m][m
+[7m Manual page cp(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              preserve the specified attributes (default: mode,ownership,time‐[m
+[7m Manual page cp(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              stamps), if  possible  additional  attributes:  context,  links,[m
+[7m Manual page cp(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              xattr, all[m
+[7m Manual page cp(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-i[22m, [1m--interactive[0m[m
+[24;1H[K[7m Manual page cp(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              xattr, all[m
+[7m Manual page cp(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c     [22mdeprecated, same as [1m--preserve[22m=[4mcontext[0m[m
+[7m Manual page cp(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--no-preserve[22m=[4mATTR_LIST[0m[m
+[7m Manual page cp(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              don't preserve the specified attributes[m
+[7m Manual page cp(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--parents[0m[m
+[7m Manual page cp(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              use full source file name under DIRECTORY[m
+[7m Manual page cp(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[22m, [1m-r[22m, [1m--recursive[0m[m
+[7m Manual page cp(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              copy directories recursively[m
+[7m Manual page cp(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--reflink[22m[=[4mWHEN[24m][m
+[7m Manual page cp(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              control clone/CoW copies. See below[m
+[7m Manual page cp(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--remove-destination[0m[m
+[7m Manual page cp(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              remove  each existing destination file before attempting to open[m
+[7m Manual page cp(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              it (contrast with [1m--force[22m)[m
+[7m Manual page cp(1) line 57 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbash-4.4$ man cpcp temp2 temp3[C[1@ [1@-[1@r
+cp: cannot stat 'temp2': No such file or directory
+bash-4.4$ cp -r temp2 temp3[1@~[1@/[1@m[1@y[1@p[1@r[1@o[1@j[1@e[1@c[C[1@t[1@/[1@a[1@1[1@/[C[C[C[C[C[C[C~temp3mtemp3ytemp3ptemp3rtemp3otemp3jtemp3etemp3ctemp3[Ctemp3/temp3atemp31temp3/temp3[C[C[C[C[C/myproject/a1/temp3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cp: cannot stat '/mnt/scratch/ashkan23fa/myproject/a1/temp2': No such file or directory
+bash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ [Kbash-4.4$ ls
+temp  temp3
+bash-4.4$ mkrid[K[K[Kdir 2[K[K temo[Kp2
+bash-4.4$ ls
+temp  temp2  temp3
+bash-4.4$ lsmkdir temp2ls[Kcp -r ~/myproject/a1/temp2 ~/myproject/a1/temp3
+bash-4.4$ ls
+temp  temp2  temp3
+bash-4.4$ ls temp3
+temp2
+bash-4.4$ ls /proc/
+1	 1197	  1388	   161	    2202     2726765  3085976  3251809	3276259  3283270  344	   480	   669	   869
+10	 1198	  1389	   162	    2203     2726909  3088539  3252012	3276267  3283271  3449	   481	   67	   870
+100	 12	  138939   163	    2204     2729033  3088746  3252825	3276269  3283273  345	   482	   671	   871
+1000	 120	  139	   164	    2205     2732422  309      3254186	3276275  3283279  3450	   483	   672	   872
+1002	 1200	  1390	   164528   2206     2737940  3090005  3254310	3276278  3283281  3452	   485	   673	   873
+1003	 1201	  1392	   165911   2208     2738775  3094481  3254589	3276534  3283353  3455	   486	   674	   874
+1004	 1202	  1393	   166	    2209     274      3099379  3254817	3276598  3283430  3456	   487	   675	   875
+1005	 1203	  1394	   167	    221      2740223  31       3254929	3276613  3283465  3459	   488	   677	   876
+1006	 1204	  1395	   168	    2211     274026   3102050  3255107	3276615  3283467  3460	   489	   678	   877
+1008	 1206	  1396	   1688253  2216843  2744272  3102950  3255460	3276621  3283553  3463	   49	   678080  878
+1009	 1207	  1398	   169	    2216845  2744325  3102952  3255476	3276622  3283626  347	   490	   679	   879
+1009129  1208	  1399	   1690     2217003  2744332  3103766  3255477	3276745  3283646  348	   491	   68	   88
+101	 1209	  14	   1691     2219281  2745044  3104547  3255523	3276763  3283679  3489	   492	   680	   880
+1010	 121	  140	   1692     2219284  2746223  3105178  3255569	3276772  3283685  349	   49270   681	   882
+1011	 1210	  1400	   1693     2219497  2746820  3109388  3255866	3276838  3283686  3490	   493	   683	   883
+1012	 1212	  1401	   1694     222      2747778  311      3255885	3276846  3283720  35	   494	   684	   884
+1014	 1213	  1401696  1695     2221     2748244  3112257  3255918	3276857  3283728  350	   495	   685	   885
+1015	 1214	  1402	   17	    2221778  2749613  3112258  3256051	3276858  3283729  351	   497	   686	   886
+1016	 1215	  1404	   170	    2223     2749722  3114312  3256053	3276927  3283784  3511	   498	   687	   888
+1017	 1216	  1405	   1719     2225     275      3114653  3256074	3276936  3283803  3513	   499	   689	   889
+1018	 1218	  1406	   172	    2227     276      3116208  3256156	3276946  3283805  3527489  50	   690	   89
+102	 1219	  1407	   1726     2228     2761328  3119321  3256247	3276947  3283851  353	   500	   691	   890
+1020	 122	  1408	   173	    223      2764083  312      3256391	3276953  3283987  3536	   501	   692	   891
+1021	 1220	  1410	   1730     2230993  2766251  3122106  3256392	3276955  3284002  3537	   503	   693	   892
+1022	 1221	  1411	   174	    2234     2766354  3126246  3256808	3276956  3284003  354	   504	   695	   894
+1023	 1222	  1412	   1740005  2238     277      3127383  3256822	3277187  3284108  3542	   505	   696	   895
+1024	 1224	  1413	   1740061  224      27707    313      3256825	3277426  3284318  3543	   506	   697	   896
+1026	 1225	  1414	   1744387  2243     2771272  314      3256893	3277514  3285573  3544	   507	   698	   897
+1027	 1226	  1416	   1744967  2244     2775454  315      3257124	3277673  3285775  3546	   509	   699	   898
+1028	 1227	  1417	   1746     2249     2778991  3152562  3257374	3277683  3285887  3547	   510	   70	   9
+1029	 1228	  1418	   175	    2250     2779915  3152566  3257432	3277685  3285955  3549	   511	   701	   90
+103	 1230	  1419	   176	    2251     278      3154709  3257601	3277727  3286	  355	   512	   702	   900
+1030	 1231	  142	   1779     2251779  2781372  3155165  3257814	3277731  3286058  3555	   513	   703	   901
+1032	 1232	  1420	   178	    2251781  2784213  3155183  3257815	3277732  3286065  356	   515	   704	   902
+1033	 1233	  1422	   1781     2252219  2784916  3155844  3257984	3277995  3286066  3566	   516	   705	   903
+1034	 1234	  1423	   1788874  2252964  2785     3156410  3258289	3277996  3286073  3569	   517	   707	   904
+1035	 1236	  1424	   179	    2253     2785877  3157569  3258290	3277998  3286074  357	   518	   708	   906
+1036	 1237	  1425	   1791078  2253542  2787701  3157820  3258318	3277999  3286079  359	   519	   709	   907
+1038	 1237798  1426	   18	    2254     2787703  3158024  3258325	3278050  3286173  36	   52	   71	   908
+1039	 1238	  1428	   180	    2255     2788198  3162464  3258568	3278066  3286281  360	   521	   710	   909
+104	 1239	  1429	   1803     2256     2788610  3162581  3258761	3278067  3286290  361	   522	   711	   91
+1040	 124	  143	   1808576  2257     2790532  3164092  3259054	3278077  3286291  3616	   523	   713	   910
+1041	 1240	  1430	   181	    2258     2791033  3164641  3259084	3278079  3286316  362	   524	   714	   912
+1042	 1242	  1431	   1812     2259     2794947  3164870  3259692	3278080  3286319  3622	   525	   715	   913
+1044	 1243	  1432	   182	    226      2799154  3168324  3259818	3278086  3286320  363	   527	   716	   914
+1045	 1244	  1434	   184	    2260     2799388  3169174  3259904	3278087  3286407  3632	   528	   717	   915
+1046	 1245	  1435	   1847193  2262     28       3169572  326	3278384  3286409  3649	   529	   719	   916
+1047	 1246	  1436	   1847586  2262940  280      3169726  3260004	3278390  3286410  365	   53	   719887  918
+1048	 1247047  1437	   185	    2266     2801     317      3260637	3278392  3286478  366	   530	   72	   919
+1050	 1247926  1438	   1853443  227      2805499  3170153  3261214	3278398  3286479  367	   531	   720	   92
+1051	 1248	  144	   1854     2270930  281      3170496  3261619	3278399  3286481  368	   533	   721	   920
+1052	 1249	  1440	   1854330  2272892  2811210  3172166  3261851	3278438  3286505  3686890  534	   722	   921
+1053	 125	  1441	   1854739  2272894  2812308  3173580  3261868	3278440  3286513  369	   535	   723	   922
+1054	 1250	  1442	   1854804  2273020  2818174  3173737  3262254	3278545  3286521  37	   536	   725	   924
+1056	 1251	  1443	   186	    2274409  282      3175118  3262304	3278552  3286522  371	   537	   726	   925
+1057	 1252	  1444	   1860     2276021  2820550  3175119  3262558	3278553  3286524  372	   539	   727	   926
+1058	 1254	  1446	   1860745  228      2823     3175193  3262559	3278625  3286530  373	   54	   728	   927
+1059	 1255	  1447	   1865623  229      2824     3175194  3262806	3278634  3286532  374	   540	   729	   928
+106	 1256	  1448	   187	    2293867  2825     3175242  3263225	3278636  3286582  375	   541	   73	   930
+1060	 1257	  1449	   1879949  23	     2826     3176031  3263539	3278723  3286592  377	   542	   731	   931
+1060382  1258	  145	   188	    230      2827     3176338  3263583	3278741  3286601  378	   543	   732	   932
+1062	 126	  1450	   1886     2304     2828     3176462  3263596	3278742  3286602  379	   545	   733	   933
+1063	 1260	  1452	   1887993  2309593  2829     3176851  3263776	3278808  3286608  38	   546	   734	   934
+1064	 1261	  1453	   1888     2309595  283      3176961  3263918	3278812  3286609  380	   547	   735	   936
+1065	 1262	  1454	   1888377  2310056  2831     3177519  3264174	3278813  3286647  381	   548	   737	   937
+1066	 1263	  1455	   1891853  2310292  2832     3177520  3264380	3278888  3286648  383	   549	   738	   938
+1068	 1264	  1456	   1893     2310566  2833     3177942  3264394	3278900  3286682  384	   55	   739	   939
+1069	 1266	  1458	   1897941  2312     284      3178078  3264668	3278901  3286685  385	   551	   74	   94
+107	 1267	  1459	   1897944  2313     2847750  3178886  3264772	3278949  3286686  3851	   552	   740	   940
+1070	 1267578  146	   1899406  2314     2853583  318      3264783	3278951  3286741  386	   552120  741	   942
+1071	 1268	  1460	   19	    2315     2855272  3182550  3264785	3278953  3286742  3863	   553	   743	   943
+1072	 1269	  1461	   190	    2316256  2855345  3183339  3265143	3278954  3286901  387	   554	   744	   944
+1074	 127	  1462	   1901     2316258  2858964  3183527  3265242	3279031  3286935  3873396  555	   745	   945
+1075	 1270	  1464	   1902     2317     286      3184473  3265528	3279045  3287111  389	   557	   746	   946
+1076	 1272	  1465	   1907     2318117  287      3184878  3265700	3279046  3287337  390	   558	   747	   948
+1077	 1273	  1466	   1907679  232      2871683  3184998  3265701	327913	 3287355  391	   559	   749	   949
+1078	 1274	  1467	   1907767  2326     2871864  3185007  3265709	3279149  3287433  392	   56	   750	   95
+108	 1275	  1468	   1909124  233      2871994  3185647  3265916	3279183  3287543  393	   560	   751	   950
+1080	 1276	  1470	   191	    2330     2872112  3185648  3265936	3279186  3287815  394089   561	   752	   951
+1081	 1278	  1471	   1910292  2332     2874502  3186388  3265937	3279206  3287918  3941	   561100  753	   952
+1082	 1279	  1472	   1911222  2333108  2876304  3186986  3266081	3279207  3288100  395	   561195  755	   954
+1083	 128	  1473	   1915332  2335     2876507  3187709  3266092	3279239  3288150  396	   563	   756	   955
+1084	 1280	  1474	   1916421  234      2876921  3188867  3266136	3279241  3288244  3968	   564	   757	   956
+1086	 1281	  1476	   192	    2344     2877660  3189126  3266436	3279411  3288265  3969	   564727  758	   957
+1087	 1282	  1477	   1921     2345     2877846  3189755  3266438	3279413  3288266  397	   565	   759	   958
+1088	 1284	  1478	   1922729  2348     2878218  319      3266594	3279417  3288340  3977760  566	   76	   96
+1089	 1284922  1479	   1923     2348864  288      3191353  3266681	3279433  3288349  397842   567	   761	   960
+109	 1285	  148	   1923502  235      2880     3192030  3267595	3279434  3288350  398	   569	   762	   961
+1090	 1286	  1480	   1926013  2354     2880367  3194820  3267610	3279575  3288419  399	   570	   763	   962
+1092	 1287	  1482	   193	    2355     2883584  3194871  3267617	3279583  3289106  4	   571	   764	   963
+1093	 1287060  1483	   1930912  2359     2883615  3195085  3267618	3279584  3289154  40	   572	   765	   964
+1094	 1288	  1484	   1930914  236      2884357  3195778  3267976	3279773  3289185  4003	   573	   767	   966
+1095	 1290	  1485	   1932099  2362     2885572  3197425  3268087	3280014  3289186  401	   575	   768	   967
+1096	 1291	  1486	   1934     2363     2885573  32       3268131	3280016  3289299  402	   576	   769	   968
+1098	 1292	  1488	   1935     238      2887657  320      3268510	3280070  3289347  403	   576508  77	   969
+1099	 1293	  1489	   194	    2381     2888459  3200476  3268529	3280093  3289355  404	   577	   770	   97
+11	 1294	  149	   1949     2382     2888773  3201342  3268532	3280102  3289356  405	   578	   771	   970
+110	 1296	  1490	   196	    2385     289      3202068  3268533	3280144  3289385  4060329  579	   773	   972
+1100	 1297	  1491	   1965967  2387232  2890075  3202532  3268571	3280185  3289409  407	   58	   774	   973
+1101	 1298	  1492	   1966     2387234  2892539  3202930  3269019	3280278  3289410  408	   581	   775	   974
+1102	 1299	  1494	   1967219  239      2893189  3204123  3269076	3280282  3289576  409	   582	   776	   975
+1104	 13	  1495	   197	    2391     2893262  3207213  3269212	3280284  3289578  409197   583	   777	   976
+1105	 130	  1496	   1970343  2394627  289388   321      3269839	3280337  3289632  41	   584	   779	   978
+1106	 1300	  1497	   198	    2394628  289649   3210483  3269952	3280361  3289802  410	   585	   78	   979
+1107	 1301	  1498	   1981524  2394672  2897269  3218202  3269954	3280362  3289804  411	   58536   780	   98
+1108	 1302	  15	   199	    2394707  289904   3218207  327	3280568  3289825  413	   586619  781	   980
+1110	 1303	  150	   1993     2394736  2899150  3223402  3270158	3280610  3289839  414	   587	   782	   981
+1111	 1304	  1500	   199413   24	     29       3223875  3270177	3280628  3289893  415	   588	   783	   982
+1112	 1305	  1501	   1995     240      290      3224072  3270213	3280629  329	  416	   589	   785	   984
+1113	 1306	  1502	   1997     241      2900781  3224166  3270214	3280677  3290035  417	   59	   786	   985
+1114	 1307	  1503	   2	    2412     2900855  3224373  3270252	3280709  3290043  419	   590	   787	   986
+1116	 1307280  1504	   20	    2418654  2900902  3227370  3270280	3280728  3290045  42	   591	   788	   987
+1117	 1308	  1506	   200	    242      2900974  3227505  3270379	3280732  3290154  420	   593	   789	   988
+1118	 1309	  1507	   2000     244      2906712  3228339  3270402	3280735  3290167  421	   594	   79	   990
+1119	 131	  1508	   2001     245      2908222  3229056  3270876	3280736  3290204  422	   595	   791	   991
+112	 1310	  1509	   2004     2458     2912739  323      3271058	3280770  3290237  423	   596	   792	   992
+1120	 1311	  151	   2007     246      2915     3230501  3271256	3280799  3290271  425	   597	   793	   993
+1122	 1312	  1510	   2008     2464     2916     3231877  3271336	3280801  3290295  426	   599	   794	   994
+1123	 1314	  1512	   2012     2466     2917199  3232587  3271337	3280807  3290307  427	   6	   795	   996
+1124	 1315	  1513	   2012349  2468     2917315  3232589  3271352	3280810  3290315  428	   60	   797	   997
+1125	 1316	  1514	   2014     247      2917616  3233440  3271354	3280861  3290321  429	   600	   798	   998
+1126	 1317	  1515	   202	    2471881  2918     3233733  3271531	3280908  3290323  43	   601	   799	   999
+1128	 1318	  1516	   2023     2471883  2918622  3234144  3271618	3280913  3290356  431	   602	   8	   buddyinfo
+1129	 132	  1518	   2024     2472377  292      3234204  3271707	3280914  3290358  432	   603	   80	   bus
+113	 1320	  1519	   2024984  248      2920406  3236283  3271865	3280983  3290403  4325	   605	   800	   cgroups
+1130	 1321	  152	   2029     2485     2921612  3236392  3271866	3280987  3290409  433	   606	   801	   cmdline
+1131	 1322	  1520	   203	    25	     293      3237328  3271945	3281016  3290412  434	   607	   803	   consoles
+1132	 1323	  1521	   2030     250      2936251  3237837  3272109	3281023  3290420  435	   608	   804	   cpuinfo
+1134	 1324	  1522	   2031     2500     2936417  3237897  3272184	3281024  3290422  437	   609	   805	   crypto
+1135	 1326	  1524	   2033     2501     2938588  3238468  3272186	3281159  3290456  438	   61	   806	   devices
+1136	 1327	  1525	   2035     2502     2939720  3238517  3272193	3281165  3290459  439	   610539  807	   device-tree
+1137	 1328	  1526	   2036     2503     294      3238594  3272230	3281166  3290461  44	   611	   809	   diskstats
+1138	 1329	  1527	   2037     2504     2940127  3238619  3272285	3281206  3290462  440	   611633  810	   dma
+114	 133	  1528	   2039     2505     2941206  3238901  3272327	3281215  3290526  441	   612	   811	   driver
+1140	 1330	  1530	   204	    2506     2942258  3238936  3272340	3281234  3290533  443	   613	   812	   execdomains
+1141	 1332	  1531	   2041     2507     2943912  3239174  3272343	3281237  3290534  4434	   614	   813	   fb
+1142	 1333	  1532	   2042     2508     2943986  3239193  3272345	3281245  3290564  444	   615	   815	   filesystems
+1143	 1334	  1533	   2044     251      2945117  3239194  3272351	3281246  3290743  445	   617	   816	   fs
+1144	 1335	  1534	   2045     252      2945953  3239233  3272353	3281247  3290787  446	   618	   817	   interrupts
+1146	 1336	  1534537  2046     2524067  2947003  3239273  3272354	3281276  3290790  447	   619	   818	   iomem
+1147	 1338	  1534872  2048     253      2948333  3239607  3272610	3281308  3290792  4475	   62	   819	   ioports
+1148	 1339	  1536	   2049     254      295      3239843  3272621	3281314  3290805  4477	   620	   82	   irq
+1149	 134	  1537	   205	    2556227  2952166  324      3272622	3281315  3290806  449	   621	   821	   kallsyms
+115	 1340	  1538	   2054077  2556799  2952879  3240152  3272944	3281352  3290876  4495	   623	   822	   kcore
+1150	 1341	  1539	   2059     2559     2954419  3241200  3272951	3281391  3290924  4498	   624	   823	   keys
+1152	 1342	  154	   206	    256      2955556  3241389  3272953	3281392  3290979  450	   625	   824	   key-users
+1153	 1344	  1540	   2061     257      2955558  3241755  3272954	3281455  3290983  4501	   626	   825	   kmsg
+1153742  1345	  1542	   2062     258      2956     3241823  3273002	3281470  3290995  451	   626193  827	   kpagecgroup
+1154	 1346	  1543	   2065     2588448  2956843  3241922  3273003	3281471  3290996  4519	   627	   828	   kpagecount
+1155	 134612   1544	   208	    2589723  2956844  3242090  3273198	3281550  3291042  452	   629	   829	   kpageflags
+1156	 1347	  1545	   2085632  259      296      3243052  3273199	3281557  3291051  453	   630	   83	   loadavg
+1158	 1348	  1546	   2089949  2593     298      3243485  3273313	3281569  3291065  455	   631	   830	   locks
+1159	 1350	  1548	   209	    26	     299      3243590  3273367	3281594  3291330  456	   632	   831	   mdstat
+116	 1351	  1549	   210	    260      2999590  3243774  3273500	3281612  3291334  457	   633	   833	   meminfo
+1160	 1352	  155	   211	    2603750  3	      3244040  3273715	3281613  3291335  458	   635	   835	   misc
+1161	 1353	  1550	   212	    2603752  30       3244045  3273750	3281705  3291371  459	   636	   836	   modules
+1162	 1354	  1553	   2135     2604372  300      3244047  3273752	3281749  3291407  4595	   636614  837	   mounts
+1164	 1356	  1556	   2136     2617207  3003     3244053  3273753	3281750  3291441  46	   637	   838	   net
+1165	 1357	  1559	   2138     262      3009005  3244055  3273769	3281922  3291580  4604	   638	   84	   pagetypeinfo
+1166	 1358	  156	   2139     2623     3009030  3244353  3273791	3281928  3291597  461	   639	   840	   partitions
+1167	 1359	  1560	   214	    2628     301      3244814  3273812	3281946  3291598  4610	   64	   841	   powerpc
+1168	 136	  1560444  2140     2629370  3014087  3244872  3273887	3281959  3291599  462	   641	   842	   ppc64
+1170	 1360	  1561	   2142     2629373  3019839  3245059  3273937	3281976  3291600  4625	   642	   843	   rtas
+1171	 1362	  1562	   2143     263      3019853  3245547  3273938	3281994  3291644  463	   643	   844	   sched_debug
+1172	 1363	  1563	   2145     2630632  302      3246301  3273976	3281996  330	  4632	   644	   846	   schedstat
+1173	 1364	  1564	   215	    2632     3023897  3246796  3273981	3282002  3304270  464	   645	   847	   scsi
+1174	 1365	  1566	   216	    2637     3029721  3246815  3273982	3282003  331	  4642	   647	   848	   self
+1176	 1366	  1567	   2161     264      3030135  3247123  3274074	3282034  3314	  465	   648	   849	   slabinfo
+1177	 1368	  1568	   2162     265      3030546  3247344  3274219	3282036  332	  4651	   649	   85	   softirqs
+1178	 1369	  1569	   217	    2652     3032269  3248971  3274228	3282175  333	  4652	   65	   850	   stat
+1179	 137	  157	   2173     2654980  3037643  3249120  3274235	3282214  3333	  4654	   650	   852	   swaps
+118	 1370	  1570	   2174     266      3039635  3249293  3274249	3282215  3343	  4657	   651	   853	   sys
+1180	 1371	  1571	   2176     268      304      3249506  3274250	3282224  335	  467	   653	   854	   sysrq-trigger
+1182	 1372	  1572	   2177     2687     3040166  3249633  3274390	3282225  336	  468	   654	   854887  sysvipc
+1183	 1374	  1573	   2179     269      3040189  325      3274627	3282307  337	  469	   655	   855	   thread-self
+1184	 1375	  1574	   218	    270      3040412  3250291  3274633	3282324  338	  47	   656	   856	   timer_list
+1185	 1376	  1575	   2184     271      3046441  3250293  3274634	3282325  3388	  470	   657	   858	   tty
+1186	 1377	  1579	   2185     2712473  3047202  3250325  3274636	3282465  3389	  4708	   659	   859	   uptime
+1188	 1378	  158	   2186     2715342  3048916  3250326  3274657	3282480  339	  471	   66	   86	   version
+1189	 138	  1582	   2187     2717058  3049265  3250472  3274658	3282483  3390	  473	   660	   860	   vmallocinfo
+119	 1380	  1583	   2193     272      3054580  3250509  3275294	3282883  3391	  474	   661	   861	   vmstat
+1190	 1381	  1584	   2195     2723849  3055841  3250954  3275710	3282886  3392	  475	   662	   862	   zoneinfo
+1191	 1382	  1595214  2198     2724219  306      3251     3275980	3282958  3398	  4750	   663	   864
+1192	 1383	  1595810  2199     2724354  3061078  3251174  3276042	3282962  34	  476	   665	   865
+1194	 1384	  16	   22	    2724978  307      3251362  3276103	3282963  341	  477	   666	   866
+1195	 1386	  160	   220	    2725011  308      3251624  3276110	3282968  342	  479	   667	   867
+1196	 1387	  1605971  2201     2726530  3085738  3251626  3276111	3283259  343	  48	   668	   868
+bash-4.4$ head -10 /proc/meminfo
+MemTotal:       73080512 kB
+MemFree:        16388096 kB
+MemAvailable:   57607296 kB
+Buffers:          632320 kB
+Cached:         42112128 kB
+SwapCached:        25344 kB
+Active:         35043456 kB
+Inactive:        9393600 kB
+Active(anon):     517696 kB
+Inactive(anon):  2149504 kB
+bash-4.4$ head -20 [K[K[K1-[K0 cp[K[K/proc/cput[Kinfo
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+bash-4.4$ tail -10 proc[K[K[K[K/proc/cpu/info[K[K[K[K[Kinfo
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3425.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+timebase	: 512000000
+platform	: pSeries
+model		: IBM,8247-22L
+machine		: CHRP IBM,8247-22L
+MMU		: Hash
+bash-4.4$ less /pross[K[K[K[K[K[K[K[K[K[K[Khead /proc/version
+Linux version 4.18.0-372.32.1.el8_6.ppc64le (mockbuild@ppc-061.build.eng.bos.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-10) (GCC)) #1 SMP Fri Oct 7 11:37:39 EDT 2022
+bash-4.4$ ls -l /proc/version
+-r--r--r-- 1 root root 0 Aug 31 16:33 /proc/version
+bash-4.4$ exit
+
+Script done on 2023-09-13 02:25:31-04:00
