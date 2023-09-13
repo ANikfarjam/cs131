@@ -1,0 +1,31 @@
+  213  cd~/
+  214  cd myproject
+  215  ls
+  216  mkdir ws3
+  217  cd ws3
+  218  cd ~/myproject/ws2/taxidata
+  219  ls
+  220  cat -3 2019-01.csv
+  221  head -3 2019-01.csv
+  222  cd ~/myproject/ws3
+  223  sort -t',' -r -k8,8 ~/myproject/ws2/taxidata/2019-01.csv>sortedjan.csv
+  224  ls
+  225  rm sortedjan.csv
+  226  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c | sort -nr | head -3>ws3.txt
+  227  cd myproject/ws3
+  228  ls
+  229  rm ws3.txt
+  230  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | unique -c | sort -nr | head -3>ws3.txt
+  231  rm ws3.txt
+  232  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -3>ws3.txt
+  233  cat ws3.txt
+  234  rm
+  235  rm ws3.txt
+  236  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -3>ws3.txt
+  237  cat ws3.txt
+  238  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-0w.csv | sort | uniq -c | sort -nr | head -3>>ws3.txt
+  239  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-02.csv | sort | uniq -c | sort -nr | head -3>>ws3.txt
+  240  cat ws3.txt
+  241  vi ws3.txt
+  242  cat ws3.txt
+  243  history>cmds.log
