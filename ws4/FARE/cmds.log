@@ -1,0 +1,417 @@
+    1  ls
+    2  ls -l
+    3  cd /
+    4  ls
+    5  cs ~
+    6  cs ~/
+    7  cs /usr
+    8  cd /usr
+    9  ls
+   10  cd /
+   11  cd ~
+   12  ls
+   13  exit
+   14  wget www.github.com
+   15  ls
+   16  passwd
+   17  ls
+   18  mkdir ~/ws1/
+   19  ls
+   20  cd ws1
+   21  git init
+   22  ls
+   23  ls -l
+   24  ls -a
+   25  mkdir cs131.git
+   26  ls
+   27  ls -a
+   28  rm .git
+   29  rmdir .git
+   30  rm -fr .git
+   31  ls -a
+   32  cd cs131.git
+   33  cd ~/
+   34  ls
+   35  wget www.github.com
+   36  ls
+   37  rm index.html
+   38  ls
+   39  cd ~/ws1
+   40  ls
+   41  cd cs131.git
+   42  touch history > cmds.log
+   43  ls
+   44  nano cmds.log
+   45  git init
+   46  ls -a
+   47  cd ~/
+   48  pwd
+   49  ls
+   50  cd ws1
+   51  ls -a
+   52  ls
+   53  cd ~/
+   54  ls
+   55  rm index.* 
+   56  ls
+   57  rm ws1
+   58  rmdir ws1
+   59  rm -rf ws1
+   60  ls
+   61  mkdir myproject
+   62  cd myproject
+   63  git init
+   64  ls -a
+   65  wget www.github.com
+   66  mkdir ws1
+   67  cd ws1
+   68  history > cmds.log
+   69  ls
+   70  cat cmds*
+   71  cd ..
+   72  git status
+   73  git add ws1
+   74  git status
+   75  git remote add origin https://github.com/ANikfarjam/cs131.git
+   76  git branch
+   77  git cummit -m "ws1 cummit"
+   78  git commit -m "ws1 commit"
+   79  git config --global user.name "ashkan23fa"
+   80  git commit -m "ws1 commit"
+   81  git branch
+   82  git push -u origin master 
+   83  ls
+   84  cd myproject
+   85  ls
+   86  cd ws2
+   87  ls
+   88  cd taxidata
+   89  ls
+   90  ls
+   91  cd myproject
+   92  ls
+   93  ls -a
+   94  ls
+   95  mkdir ws2
+   96  ls
+   97  cd ws2
+   98  cs ~/
+   99  cd ~/
+  100  cp /datasets/taxidata.tar.gz 
+  101  man cp
+  102  cp /datasets/taxidata.tar.gz ~/myproject/ws2
+  103  cd myproject
+  104  js
+  105  ls
+  106  cd ws2
+  107  ls
+  108  man tar
+  109  tar zxvf taxidata.tar.gz
+  110  cat 2019-03.csv
+  111  ls
+  112  ls -a
+  113  car taxidata
+  114  cat taxidata
+  115  cd taxidata
+  116  ls
+  117  cd..
+  118  cd ..
+  119  cat taxidata/2019-03.csv
+  120  clear
+  121  cat -5 taxidata/2019-03.csv
+  122  head -5 taxidata/2019-03.csv
+  123  man grep
+  124  ls
+  125  grep ^[^,]*,[^,]*,"2019-03-12",.*$ taxidata/2019-03.csv
+  126  grep ^[^,]*,[^,]*,"2019-03-12",.*$ taxidata/2019-03.csv > result.txt
+  127  ls
+  128  cat result.tst
+  129  cat result.txt
+  130  grep ^[^,]*,[^,]*,"2019-03-12",.*$ taxidata/2019-03.csv
+  131  grep "^[^,]*,[^,]*,\"2019-03-12\",.*$" taxidata/2019-03.csv
+  132  cd taxidata
+  133  tail -3 2019-03.csv
+  134  cd ..
+  135  grep "^[^,]*,[^,]*,\"2019-03-12\" .*,.*$" taxidata/2019-03.csv
+  136  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv
+  137  ls
+  138  cd myproject
+  139  ls
+  140  cd ws2
+  141  ls
+  142  rm result.txt
+  143  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | tail -20 > result.txt
+  144  ls
+  145  cat result.txt
+  146  man wc
+  147  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> result.txt
+  148  cat result.txt
+  149  history > cmds.log
+  150  ls
+  151  cd..
+  152  cd ..
+  153  ls -l
+  154  ls
+  155  ls -a
+  156  git status
+  157  git add ws2
+  158  git status
+  159  cd ws2
+  160  ls
+  161  git add result.txt
+  162  git add cmds.log 
+  163  git status
+  164  git commit -m "Final draft of WS2"
+  165  cat cmds.log
+  166  ls
+  167  rm result.txt 
+  168  rm cmds.log 
+  169  ls
+  170  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | tail -20 > results.txt
+  171  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> result.txt
+  172  cat results.txt
+  173  grep "^[^,]*,[^,]*,\"2019-03-12.*\",.*$" taxidata/2019-03.csv | wc -l >> results.txt
+  174  ls
+  175  rm result.txt
+  176  cat results.txt
+  177  history > cmds.log
+  178  cat cmds.log
+  179  git status
+  180  git add cmds.log
+  181  git status
+  182  git add results.txt
+  183  git status
+  184  git add result.txt
+  185  git status
+  186  git commit -m "renaming result.txt -> results.txt"
+  187  git push
+  188  git status
+  189  cd ..
+  190  ls
+  191  git status
+  192  ls
+  193  cd myproject
+  194  ls
+  195  cd ws2
+  196  ls
+  197  cd taxidata
+  198  ls 
+  199  less 2019-1.csv
+  200  less 2019-01.csv
+  201  head -5 2019-01.csv
+  202  ls
+  203  cd myproject
+  204  ls
+  205  cd ws2
+  206  ls
+  207  cd taxidata
+  208  ls
+  209  head -5 2019-01.csv
+  210  ls
+  211  cd .
+  212  pwd
+  213  cd~/
+  214  cd myproject
+  215  ls
+  216  mkdir ws3
+  217  cd ws3
+  218  cd ~/myproject/ws2/taxidata
+  219  ls
+  220  cat -3 2019-01.csv
+  221  head -3 2019-01.csv
+  222  cd ~/myproject/ws3
+  223  sort -t',' -r -k8,8 ~/myproject/ws2/taxidata/2019-01.csv>sortedjan.csv
+  224  ls
+  225  rm sortedjan.csv
+  226  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uique -c | sort -nr | head -3>ws3.txt
+  227  ls
+  228  mkdir a1
+  229  ls
+  230  cd a1/
+  231  pwd
+  232  echo $HOME
+  233  id ashkan23fa
+  234  mkdir temp
+  235  ls
+  236  chmod 677 temp
+  237  ls -l
+  238  cd temp
+  239  ls -l temp
+  240  touch temp/file.txt
+  241  pwd
+  242  mkdir temp2
+  243  man mv
+  244  mv temp2 temp3
+  245  man cp
+  246  cp temp2 temp3
+  247  man cp
+  248  cp -r temp2 temp3
+  249  cp -r ~/myproject/a1/temp2 ~/myproject/a1/temp3
+  250  ls
+  251  mkdir temp2
+  252  ls
+  253  cp -r ~/myproject/a1/temp2 ~/myproject/a1/temp3
+  254  ls
+  255  ls temp3
+  256  ls /proc/
+  257  head -10 /proc/meminfo
+  258  head -10 /proc/cpuinfo
+  259  tail -10 /proc/cpuinfo
+  260  head /proc/version
+  261  ls -l /proc/version
+  262  cd myproject/ws3
+  263  ls
+  264  rm ws3.txt
+  265  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | unique -c | sort -nr | head -3>ws3.txt
+  266  rm ws3.txt
+  267  cut -d '-' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -3>ws3.txt
+  268  cat ws3.txt
+  269  rm
+  270  rm ws3.txt
+  271  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -3>ws3.txt
+  272  cat ws3.txt
+  273  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-0w.csv | sort | uniq -c | sort -nr | head -3>>ws3.txt
+  274  cut -d ',' -f 8 ~/myproject/ws2/taxidata/2019-02.csv | sort | uniq -c | sort -nr | head -3>>ws3.txt
+  275  cat ws3.txt
+  276  vi ws3.txt
+  277  cat ws3.txt
+  278  history>cmds.log
+  279  vim cmds.log
+  280  cat cmds.log
+  281  ls
+  282  pwd
+  283  git add ws3.txt
+  284  git add cmds.log
+  285  git satatus
+  286  git status
+  287  git commit -m "final draft of ws3"
+  288  git status
+  289  cd myproject
+  290  git status
+  291  git push
+  292  ls
+  293  cd myproject
+  294  script
+  295  mkdir a1
+  296  cd a1
+  297  echo $HOME
+  298  id ashkan23fa
+  299  mkdir temp
+  300  ls
+  301  ls -l
+  302  ls
+  303  cd myproject/
+  304  ls
+  305  rm typescript
+  306  rm a1
+  307  rm -f a1
+  308  rmdir a1
+  309  rm -f a1
+  310  rmdir -f a1
+  311  rm -r a1
+  312  ls
+  313  clear
+  314  pwd
+  315  sctript
+  316  script
+  317  ls
+  318  cat typescript>a1/a1.txt
+  319  cd a1
+  320  ls
+  321  cat a1.txt
+  322  history>cmds.log
+  323  vi a1.txt
+  324  nano a1.txt
+  325  cat a1.txt
+  326  ls
+  327  git add a1.txt
+  328  git add cmds.log
+  329  cd ..
+  330  ls
+  331  git add typescript
+  332  git status
+  333  git commit
+  334  git commit -m "a1 final submission"
+  335  git push
+  336  pwd
+  337  cd ~/
+  338  pwd
+  339  vi .bashrc
+  340  l
+  341  source .bashrc
+  342  pwd
+  343  source /mnt/scratch/ashkan23fa/.bashrc
+  344  vi .bashrc
+  345  l
+  346  source /mnt/scratch/ashkan23fa/.bashrc
+  347  l
+  348  w
+  349  l
+  350  cd myproject
+  351  l
+  352  mkdir ws4/FARE
+  353  cd ws4/FARE
+  354  pwd
+  355  junData = "~/myproject/ws2/taxidata/2019-06.csv"
+  356  head -10 ~/myproject/ws2/taxidata/2019-0w.csv
+  357  head -10 ~/myproject/ws2/taxidata/2019-06.csv
+  358  cut -d ',' -f 7,8,10 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$7 == 113.0 && $8 == 148.0' > 113-148.txt
+  359  pwd
+  360  ls
+  361  head -5 113-148.txt
+  362  cat -5 113-148.txt
+  363  cat 113-148.txt
+  364  man awk
+  365  cut -d ',' -f 7,8,10 ~/myproject/ws2/taxidata/2019-06.csv | awk '$7 == 113.0 && $8 == 148.0' > 113-148.txt
+  366  head -5 113-148.txt
+  367  cut -d ',' -f 7,8,10 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$7 = 113.0 && $8 = 148.0' > 113-148.txt
+  368  head -5 113-148.txt
+  369  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$8 = 113.0 && $9 = 148.0' > 113-148.txt
+  370  head -5 113-148.txt
+  371  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$8 == 113.0 && $9 == 148.0' > 113-148.txt
+  372  head -5 113-148.txt
+  373* 
+  374  head -5 113-148.txt
+  375  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$8 == 79.0 && $9 == 125.0' > 79-125.txt
+  376  head -5 79-125.txt
+  377  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$8 = 79.0 && $9 = 125.0' > 79-125.txt
+  378  head -5 79-125.txt
+  379  cat 79-125.txt
+  380  clear
+  381  pwd
+  382  l
+  383  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$1 = 79.0 && $2 = 125.0' > 79-125.txt
+  384  head -5 79-125.txt
+  385  cut -d ',' -f 8,9,11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$1 = 113.0 && $2 = 148.0' > 113-148.txt
+  386  head -5 113-148.txt
+  387  echo $(cut -f 3 -d $'\t' 113-148.txt | paste -sd+ - | bc -l)
+  388  clear
+  389  head -5 113-148.txt
+  390  cut -d ',' -f 11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$1 = 113.0 && $2 = 148.0' > 113-148.txt
+  391  head -5 113-148.txt
+  392  cut -d ',' -f 11 ~/myproject/ws2/taxidata/2019-06.csv | awk -F ',' '$8 = 113.0 && $9 = 148.0' > 113-148.txt
+  393  head -5 113-148.txt
+  394  awk -F ',' '$8 == "113.0" && $9=="148"  {print $11}' ~/myproject/ws2/taxidata/2019-06.csv > 113-148.txt
+  395  head -5 113-148.txt
+  396  awk -F ',' '$8="113.0" && $9="148"  {print $11}' ~/myproject/ws2/taxidata/2019-06.csv > 113-148.txt
+  397  awk -F ',' '$8="113.0" && $9="148.0"  {print $11}' ~/myproject/ws2/taxidata/2019-06.csv > 113-148.txt
+  398  head -5 113-148.txt
+  399  ls
+  400  awk -F ',' '$8="79.0" && $9="125.0"  {print $11}' ~/myproject/ws2/taxidata/2019-06.csv > 79-125.txt
+  401  head -5 79-125.txt 
+  402* echo $(awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' output.tx
+  403  head -5 79-125.txt 
+  404  awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' output.txt
+  405  awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' 79-125.txt
+  406  echo "The Average is:" >> 79-125.txt
+  407  tail -5 79-125.txt
+  408  awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' 79-125.txt >> 79-125.txt
+  409  tail -5 79-125.txt
+  410  ls
+  411  echo "The Average is:" >> 113-148.txt
+  412  awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' 113-148.txt >> 113-148.txt
+  413  tail -5 113-148.txt
+  414  history>cmds
+  415  l
+  416  rm cmds
+  417  history>cmds.log
