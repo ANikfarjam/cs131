@@ -1,0 +1,20 @@
+Average Fare for 05/11/2019 is:
+17.99109151451982495793
+Highest total amount paid by customers who were picked up on May 11, 2019:
+1309.8
+Among the rides with three or more customers, identify the 10 most popular dropoff locations for May:
+39909 236.0
+37140 237.0
+36990 161.0
+33678 230.0
+28506 170.0
+27895 162.0
+27485 48.0
+26782 142.0
+25051 239.0
+24609 234.0
+Q#4
+306757 237.0
+Q5
+Q5
+3641682 237.0

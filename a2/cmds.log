@@ -1,0 +1,38 @@
+ 
+
+
+ Q1#
+ rav007@Admin-Ashkan a2 % grep ".*,\"2019-05-11.*" ~/Documents/cs131/taxidata/taxidata/2019-05.csv|cut -d ',' -f 17>temp.txt   
+ rav007@Admin-Ashkan a2 % head -n 10 temp.txt
+ rav007@Admin-Ashkan a2 % echo "($(paste -sd+ temp.txt)) / $(wc -l < temp.txt)" | bc -l >> a2.txt 
+ rav007@Admin-Ashkan a2 % cat a2.txt                                                              
+ Q2#
+ rav007@Admin-Ashkan a2 % sort -nr temp.txt | head -n 1 >> a2.txt  
+ Q3#
+ rav007@Admin-Ashkan a2 % awk -F ',' '$4 >= 3 {print $9}' ~/Documents/cs131/taxidata/taxidata/2019-05.csv | sort | uniq -c | sort -nr | head -n 10 | cut -d ' ' -f 2 > temp.txt 
+rav007@Admin-Ashkan a2 % cat temp.txt 
+236.0
+237.0
+161.0
+230.0
+170.0
+162.0
+48.0
+142.0
+239.0
+234.0
+rav007@Admin-Ashkan a2 % awk -F ',' '$4 >= 3 {print $9}' ~/Documents/cs131/taxidata/taxidata/2019-05.csv | sort | uniq -c | sort -nr |head -n 10 >> a2.txt 
+
+Q4)
+rav007@Admin-Ashkan a2 % cut -d ',' -f 8 ~/Documents/cs131/taxidata/taxidata/2019-05.csv | sort | uniq -c | sort -nr | head -n 1 > temp.txt    
+rav007@Admin-Ashkan a2 % cat temp.txt 
+ 1090  grep ".*,.*,.*,.*,.*,.*,.*,$mostpopulat,*" ~/Documents/cs131/taxidata/taxidata/2019-05.csv | cut -d ',' -f 9 | sort | uniq -c | sort -nr | head -n 1 >> a2.txt
+ 1091  tail -n 2 a2.txt
+ 1096  ls ~/Documents/cs131/taxidata/taxidata
+ 
+Q5)
+1100  for file in ~/Documents/cs131/taxidata/taxidata/*.csv; do\n     cut -d ',' -f 8 $file >> temp2.txt\n;done
+ 1101  echo "Q5" >> a2.txt
+ 1102  sort temp2.txt | uniq -c | sort -nr | head -n 1 >> a2.txt
+ 1103  tail -n 2 a2.txt
+ 1104  ls
