@@ -1,0 +1,47 @@
+I had to do this project out of IBM due to issue with vpn I cloned my repo from github and started working here
+also since history didnt log much i manually copy pasted my commands
+
+rav007@Admin-Ashkan cs131 % ls ws2
+cmds.log	results.txt
+rav007@Admin-Ashkan ws5 % grep "*,*,*,*,*,*,*,234.0,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv | head -n 4
+rav007@Admin-Ashkan ws5 % grep "*,*,*,*,*,*,*,234.0,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv | head -4  
+rav007@Admin-Ashkan ws5 % head -n 10 ~/Documents/cs131/taxidata/taxidata/2019-08.csv
+rav007@Admin-Ashkan ws5 % wc -l ~/Documents/cs131/taxidata/taxidata/2019-08.csv                                 
+rav007@Admin-Ashkan ws5 % tail -n 10 ~/Documents/cs131/taxidata/taxidata/2019-08.csv
+rav007@Admin-Ashkan ws5 % grep ".*,.*,.*,.*,.*,.*,.*,234.0,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv | head -n 4
+rav007@Admin-Ashkan ws5 % numdata=$(wc -l < ~/Documents/cs131/taxidata/taxidata/2019-08.csv)
+rav007@Admin-Ashkan ws5 % echo $numdata
+ 6073358
+
+e
+rav007@Admin-Ashkan ws5 % cut -d ' ' -f $1 top100.txt > top100.txt
+cut: [-bcf] list: illegal list value
+rav007@Admin-Ashkan ws5 % cut -d ' ' -f 1 top100.txt > top100.txt 
+rav007@Admin-Ashkan ws5 % head -n 10 top100.txt                                             
+rav007@Admin-Ashkan ws5 % head -n 10 top100.txt
+rav007@Admin-Ashkan ws5 % rm top100.txt                                               
+rav007@Admin-Ashkan ws5 % grep ".*,.*,.*,.*,.*,.*,.*,234.0,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv | cut -d ',' -f 9 | sort | uniq -c | sort -nr | head -n 100 | cut -d ' ' -f 1-> top100.txt
+^C
+//I used this grep to fet the top 100 location IDs so I can use them in my loop to do make the files
+rav007@Admin-Ashkan ws5 % ls
+top100.txt
+rav007@Admin-Ashkan ws5 % grep ".*,.*,.*,.*,.*,.*,.*,234.0,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv | cut -d ',' -f 9 | sort | uniq -c | sort -nr | head -n 100 | cut -d ' ' -f 1 > top100.txt
+rav007@Admin-Ashkan ws5 % head -n top100.txt                                                                                                                                                            
+head: illegal line count -- top100.txt
+rav007@Admin-Ashkan ws5 % head -n 10 top100.txt
+
+ 1049  ls
+ 1050  mkdir do234
+ 1051  numdata=$(wc -l < top100.txt)
+ 1052  echo $numdata
+ 1054  for i in {$(cat top100.txt)}; do\n    grep ".*,.*,.*,.*,.*,.*,.*,.*,$i,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv > $i.txt\n;done
+ 1055  ls 
+ 1057  for i in $(cat top100.txt); do\n    grep ".*,.*,.*,.*,.*,.*,.*,.*,$i,*" ~/Documents/cs131/taxidata/taxidata/2019-08.csv > do234/$i.txt\n;done
+//Since i originaly used top100.txt to grep the lines i wante from the original csv file, i just redirect the content of that file to ws5.txt
+ 1058  cat top100.txt > ws5.txt
+ 1059  ls
+ 1060  ls do234
+ 1061  history>cmds.log
+ 1062  ls
+ 1063  vim cmds.log
+ 1064  vim cmds.log
