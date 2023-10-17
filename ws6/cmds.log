@@ -1,0 +1,41 @@
+  529  mkdir ws6
+  530  ls
+  531  cd ws6
+  532  ls ~/myproject/ws2/
+  533  ls ~/myproject/ws2/taxidata
+  534  head -3 ~/myproject/ws2/taxidata/2019-11.csv
+  ##############################
+  Q1: extracting linese with vender ID 2.0
+  ##############################
+  544  sed -n '/^2\.0/p' ~/myproject/ws2/taxidata/2019-11.csv | head -10
+  545  sed -n '/^2\.0/p' ~/myproject/ws2/taxidata/2019-11.csv > vendor2.csv
+  546  ls
+  ##############################
+  Q2: remove : " and -
+  #############################
+  566  sed 's/[:\"\-]//g' ~/myproject/ws2/taxidata/2019-11.csv > no-seperator.csv
+  ############################
+  Q3: removing decmols
+  ############################# 
+  567  sed 's/\([0-9]*\)\.[0-9]*/\1/g' no-seperator.csv | head -3
+  568  sed 's/\([0-9]*\)\.[0-9]*/\1/g' no-seperator.csv > no-fraction.csv
+  569  ls
+  ############################
+  it was taking a long time so I intrupted the process and check the file hea -n
+  and also check the size by ls -lh then i noticed it was working but slow 
+  ###########################
+  570  head -5 no-fraction.csv 
+  571  ls -lh
+  572  sed 's/\([0-9]*\)\.[0-9]*/\1/g' no-seperator.csv > no-fraction.csv
+  573  ls
+  ##########################
+  since the file are larg instead of pushing the to git hub we were instructed to put
+  heads of each file to "ws6.txt" and push that to git hub
+  ###########################
+  574  head -10 vendor2.csv > ws6.txt
+  575  vim ws6.txt 
+  576  head -10 no-seperator.csv >> ws6.txt
+  577  vim ws6.txt 
+  578  head -10 no-fraction.csv >> ws6.txt
+  579  vim ws6.txt 
+  580  history > cmds.log
