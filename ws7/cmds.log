@@ -1,0 +1,31 @@
+  659  ls
+  660  cd myproject/
+  661  ls
+  662  mkdir ws7
+  663  ls
+  664  cd ws7
+  665  ls ~/myproject/ws2/
+  666  ls ~/myproject/ws2/taxidata
+  670  cut -d, -f 13 ~/myproject/ws2/taxidata/2019-12.csv | head -3
+  671  cut -d, -f 14 ~/myproject/ws2/taxidata/2019-12.csv | head -3
+  672  cut -d, -f 15 ~/myproject/ws2/taxidata/2019-12.csv | head -3
+  673  cut -d, -f 15 ~/myproject/ws2/taxidata/2019-12.csv | head -10
+  674  cut -d, -f 16 ~/myproject/ws2/taxidata/2019-12.csv | head -10
+  675  awk -F '$15 >= 10 {print $14 $15}' ~/myproject/ws2/taxidata/2019-12.csv | head -5 
+  676  awk -F, '$15 >= 10 {print $14 $15}' ~/myproject/ws2/taxidata/2019-12.csv | head -5 
+  677  awk -F, '$15 >= 10 {print $14, $15}' ~/myproject/ws2/taxidata/2019-12.csv | head -5 
+  678  clear
+  679  awk -F, '$15 >= 10 {print $14}' ~/myproject/ws2/taxidata/2019-12.csv | sort -rn | head -4 
+  
+
+/// Q1: in this awk command I checked the total fare is more than 10$
+/// then i extracted the tip amount 
+/// i sorted them then count the uniques
+/// then i sorted the resut in decending order 
+  689  awk -F, '$15 >= 10 {print $14}' ~/myproject/ws2/taxidata/2019-12.csv | sort | uniq -c | sort -nr | head -5
+  690  awk -F, '$15 >= 10 {print $14}' ~/myproject/ws2/taxidata/2019-12.csv | sort | uniq -c | sort -nr > result.txt
+////Q2: since result.txt has all the info i need in decending order i just used head to direct the top 20 to ws7: 
+  691  head -20 result.txt > ws7.txt
+  692  ls
+  693  cat ws7.txt 
+  694  history > cmds.log
