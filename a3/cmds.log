@@ -1,0 +1,35 @@
+  703  cd myproject/
+  704  ls
+  705  mkdir a3
+  706  cd a3
+  707  ls ../ws2/taxidata
+  708  head -5 ../ws2/taxidata/2019-08.csv
+  728  
+  729  ###################q1- calculating the average total amount payed for each pickup location
+	##################	 then sort based on total amount payed that is column 2 not that why i use -k2,2 
+  730  awk -F, '{ pickup_location[$8] += $17; count[$8] += 1; } END { for (loc in pickup_location) print loc, pickup_location[loc] / count[loc]; }' ../ws2/taxidata/2019-08.csv | sort -t' ' -k2,2 -n -r | head -10 > a3.txt
+  731  cat a3.txt 
+  ######################q2- same approach as the 1st question except its a pair od columns now############################## 
+  733  awk -F, '{ pickup_location[$8,$9] += $17; count[$8,$9] += 1; } END { for (loc in pickup_location) { split(loc, a, SUBSEP); print a[1], a[2], pickup_location[loc] / count[loc]; } }' ../ws2/taxidata/2019-08.csv | sort -t' ' -k2,2 -n -r | head -10 
+  734  awk -F, '{ pickup_location[$8,$9] += $17; count[$8,$9] += 1; } END { for (loc in pickup_location) { split(loc, a, SUBSEP); print a[1], a[2], pickup_location[loc] / count[loc]; } }' ../ws2/taxidata/2019-08.csv | sort -t' ' -k3,3 -n -r | head -10 >a3q2.txt 
+  735  cat a3q2.txt 
+############################q3- using awk to create a nice 2d data set for our ploting
+############################ then we can create our gnu script
+  744  awk -F, '{ passenger_count[$4] += $14; count[$4] += 1; } END { for (pass in passenger_count) print pass, passenger_count[pass] / count[pass]; }' ../ws2/taxidata/2019-08.csv > gnu1.csv 
+  745  vim boxplt.gp
+  746  gnuplot boxplt.gp 
+###at this point i pushed my plot to github to double check and then i moved to next questio
+########## Q4- same approach reate data set using awk then creat scaterplot scrip
+  761  awk -F, '{ trip_distance[$5] += $17; count[$5] += 1; } END { for (dist in trip_distance) print dist, trip_distance[dist] / count[dist]; }' ../ws2/taxidata/2019-08.csv > gnu2.csv 
+  762  ls
+  763  head -4 gnu2.csv 
+  764  vim sctrplt.gp
+  765  ls
+  766  vim sctrplt.gp
+  767  cat sctrplt.gp
+  768  gnuplot sctrplt.gp 
+  769  ls
+  770  git add a3t4.svg 
+  771  git commit -m "added scatter plot"
+  772  git push
+  773  history>cmds.log
