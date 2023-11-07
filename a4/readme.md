@@ -8,6 +8,7 @@ is_empty_column() {
     column="$1"
      awk -v col="$column" '{if ($col != "") {exit 1}} END {exit 0}' "$input_file"
 }
+
 2- loop through each column and when assign the column that is empty to that variable
 for ((i = 1; i <= num_columns; i++)); do
     if is_empty_column "$i"; then
