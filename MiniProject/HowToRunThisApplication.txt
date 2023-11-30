@@ -1,0 +1,14 @@
+after locating these files to the desired directory follow these steps
+1- execute the yearly.sh and pass in flue-publica...flueseason.csv
+2- execute yrly_data.sh and pass in yearly_datasey.csv as parameter
+3- execute type_week_ranking.csv to see the top weeks with highes date
+optional
+3- execute type_year.sh to see yearly analysis of inluanza types
+
+
+for visualization i used python so befor you run map.py 
+install pandas, plotly, and Dash libraries
+to run map.py
+    $ python3 map.py
+    if the flask app doesnt open, copy past the ip address to your browser or
+    if you useing mac hold command+click on the link

@@ -1,0 +1,61 @@
+region,Influenza_Category,Count
+Bay Area,Influenza_A,1880
+Bay Area,Influenza_AH1pdm09,67
+Bay Area,Influenza_AH3,1720
+Bay Area,Influenza_ANotSubtyped,93
+Bay Area,Influenza_B,176
+Bay Area,Influenza_BNotLineageTyped,102
+Bay Area,Influenza_BVictoria,8
+Bay Area,Influenza_BYamagata,66
+Bay Area,Influenza_Tested,5052
+Bay Area,Influenza_Total,2056
+California,Influenza_A,6247
+California,Influenza_AH1pdm09,269
+California,Influenza_AH3,5855
+California,Influenza_ANotSubtyped,123
+California,Influenza_B,718
+California,Influenza_BNotLineageTyped,283
+California,Influenza_BVictoria,80
+California,Influenza_BYamagata,355
+California,Influenza_Tested,13521
+California,Influenza_Total,6965
+Central,Influenza_A,594
+Central,Influenza_AH1pdm09,43
+Central,Influenza_AH3,550
+Central,Influenza_ANotSubtyped,1
+Central,Influenza_B,49
+Central,Influenza_BNotLineageTyped,25
+Central,Influenza_BVictoria,7
+Central,Influenza_BYamagata,17
+Central,Influenza_Tested,1040
+Central,Influenza_Total,643
+Lower Southern,Influenza_A,2265
+Lower Southern,Influenza_AH1pdm09,98
+Lower Southern,Influenza_AH3,2161
+Lower Southern,Influenza_ANotSubtyped,6
+Lower Southern,Influenza_B,255
+Lower Southern,Influenza_BNotLineageTyped,60
+Lower Southern,Influenza_BVictoria,40
+Lower Southern,Influenza_BYamagata,155
+Lower Southern,Influenza_Tested,4071
+Lower Southern,Influenza_Total,2520
+Northern,Influenza_A,181
+Northern,Influenza_AH1pdm09,7
+Northern,Influenza_AH3,173
+Northern,Influenza_ANotSubtyped,1
+Northern,Influenza_B,41
+Northern,Influenza_BNotLineageTyped,33
+Northern,Influenza_BVictoria,1
+Northern,Influenza_BYamagata,7
+Northern,Influenza_Tested,871
+Northern,Influenza_Total,222
+Upper Southern,Influenza_A,1327
+Upper Southern,Influenza_AH1pdm09,54
+Upper Southern,Influenza_AH3,1251
+Upper Southern,Influenza_ANotSubtyped,22
+Upper Southern,Influenza_B,197
+Upper Southern,Influenza_BNotLineageTyped,63
+Upper Southern,Influenza_BVictoria,24
+Upper Southern,Influenza_BYamagata,110
+Upper Southern,Influenza_Tested,2487
+Upper Southern,Influenza_Total,1524

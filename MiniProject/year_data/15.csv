@@ -1,0 +1,61 @@
+region,Influenza_Category,Count
+Bay Area,Influenza_A,926
+Bay Area,Influenza_AH1pdm09,7
+Bay Area,Influenza_AH3,873
+Bay Area,Influenza_ANotSubtyped,46
+Bay Area,Influenza_B,64
+Bay Area,Influenza_BNotLineageTyped,46
+Bay Area,Influenza_BVictoria,7
+Bay Area,Influenza_BYamagata,11
+Bay Area,Influenza_Tested,3215
+Bay Area,Influenza_Total,990
+California,Influenza_A,4283
+California,Influenza_AH1pdm09,46
+California,Influenza_AH3,4172
+California,Influenza_ANotSubtyped,65
+California,Influenza_B,625
+California,Influenza_BNotLineageTyped,457
+California,Influenza_BVictoria,66
+California,Influenza_BYamagata,102
+California,Influenza_Tested,10090
+California,Influenza_Total,4908
+Central,Influenza_A,684
+Central,Influenza_AH1pdm09,4
+Central,Influenza_AH3,672
+Central,Influenza_ANotSubtyped,8
+Central,Influenza_B,27
+Central,Influenza_BNotLineageTyped,27
+Central,Influenza_BVictoria,0
+Central,Influenza_BYamagata,0
+Central,Influenza_Tested,1189
+Central,Influenza_Total,711
+Lower Southern,Influenza_A,1715
+Lower Southern,Influenza_AH1pdm09,23
+Lower Southern,Influenza_AH3,1690
+Lower Southern,Influenza_ANotSubtyped,2
+Lower Southern,Influenza_B,418
+Lower Southern,Influenza_BNotLineageTyped,283
+Lower Southern,Influenza_BVictoria,53
+Lower Southern,Influenza_BYamagata,82
+Lower Southern,Influenza_Tested,3309
+Lower Southern,Influenza_Total,2133
+Northern,Influenza_A,218
+Northern,Influenza_AH1pdm09,2
+Northern,Influenza_AH3,210
+Northern,Influenza_ANotSubtyped,6
+Northern,Influenza_B,32
+Northern,Influenza_BNotLineageTyped,32
+Northern,Influenza_BVictoria,0
+Northern,Influenza_BYamagata,0
+Northern,Influenza_Tested,1010
+Northern,Influenza_Total,250
+Upper Southern,Influenza_A,740
+Upper Southern,Influenza_AH1pdm09,10
+Upper Southern,Influenza_AH3,727
+Upper Southern,Influenza_ANotSubtyped,3
+Upper Southern,Influenza_B,84
+Upper Southern,Influenza_BNotLineageTyped,69
+Upper Southern,Influenza_BVictoria,6
+Upper Southern,Influenza_BYamagata,9
+Upper Southern,Influenza_Tested,1367
+Upper Southern,Influenza_Total,824

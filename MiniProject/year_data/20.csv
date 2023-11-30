@@ -1,0 +1,61 @@
+region,Influenza_Category,Count
+Bay Area,Influenza_A,889
+Bay Area,Influenza_AH1pdm09,801
+Bay Area,Influenza_AH3,37
+Bay Area,Influenza_ANotSubtyped,51
+Bay Area,Influenza_B,284
+Bay Area,Influenza_BNotLineageTyped,12
+Bay Area,Influenza_BVictoria,267
+Bay Area,Influenza_BYamagata,5
+Bay Area,Influenza_Tested,2417
+Bay Area,Influenza_Total,1173
+California,Influenza_A,2307
+California,Influenza_AH1pdm09,2054
+California,Influenza_AH3,90
+California,Influenza_ANotSubtyped,163
+California,Influenza_B,1073
+California,Influenza_BNotLineageTyped,203
+California,Influenza_BVictoria,860
+California,Influenza_BYamagata,10
+California,Influenza_Tested,7460
+California,Influenza_Total,3380
+Central,Influenza_A,226
+Central,Influenza_AH1pdm09,205
+Central,Influenza_AH3,9
+Central,Influenza_ANotSubtyped,12
+Central,Influenza_B,84
+Central,Influenza_BNotLineageTyped,84
+Central,Influenza_BVictoria,0
+Central,Influenza_BYamagata,0
+Central,Influenza_Tested,612
+Central,Influenza_Total,310
+Lower Southern,Influenza_A,425
+Lower Southern,Influenza_AH1pdm09,396
+Lower Southern,Influenza_AH3,14
+Lower Southern,Influenza_ANotSubtyped,15
+Lower Southern,Influenza_B,93
+Lower Southern,Influenza_BNotLineageTyped,6
+Lower Southern,Influenza_BVictoria,87
+Lower Southern,Influenza_BYamagata,0
+Lower Southern,Influenza_Tested,1292
+Lower Southern,Influenza_Total,518
+Northern,Influenza_A,178
+Northern,Influenza_AH1pdm09,161
+Northern,Influenza_AH3,5
+Northern,Influenza_ANotSubtyped,12
+Northern,Influenza_B,134
+Northern,Influenza_BNotLineageTyped,5
+Northern,Influenza_BVictoria,124
+Northern,Influenza_BYamagata,5
+Northern,Influenza_Tested,583
+Northern,Influenza_Total,312
+Upper Southern,Influenza_A,589
+Upper Southern,Influenza_AH1pdm09,491
+Upper Southern,Influenza_AH3,25
+Upper Southern,Influenza_ANotSubtyped,73
+Upper Southern,Influenza_B,478
+Upper Southern,Influenza_BNotLineageTyped,96
+Upper Southern,Influenza_BVictoria,382
+Upper Southern,Influenza_BYamagata,0
+Upper Southern,Influenza_Tested,2556
+Upper Southern,Influenza_Total,1067

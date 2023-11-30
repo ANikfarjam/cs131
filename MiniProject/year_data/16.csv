@@ -1,0 +1,61 @@
+region,Influenza_Category,Count
+Bay Area,Influenza_A,533
+Bay Area,Influenza_AH1pdm09,102
+Bay Area,Influenza_AH3,410
+Bay Area,Influenza_ANotSubtyped,21
+Bay Area,Influenza_B,154
+Bay Area,Influenza_BNotLineageTyped,67
+Bay Area,Influenza_BVictoria,53
+Bay Area,Influenza_BYamagata,34
+Bay Area,Influenza_Tested,3257
+Bay Area,Influenza_Total,687
+California,Influenza_A,2207
+California,Influenza_AH1pdm09,842
+California,Influenza_AH3,1319
+California,Influenza_ANotSubtyped,46
+California,Influenza_B,1144
+California,Influenza_BNotLineageTyped,231
+California,Influenza_BVictoria,279
+California,Influenza_BYamagata,634
+California,Influenza_Tested,8595
+California,Influenza_Total,3351
+Central,Influenza_A,86
+Central,Influenza_AH1pdm09,45
+Central,Influenza_AH3,40
+Central,Influenza_ANotSubtyped,1
+Central,Influenza_B,85
+Central,Influenza_BNotLineageTyped,63
+Central,Influenza_BVictoria,18
+Central,Influenza_BYamagata,4
+Central,Influenza_Tested,361
+Central,Influenza_Total,171
+Lower Southern,Influenza_A,1159
+Lower Southern,Influenza_AH1pdm09,558
+Lower Southern,Influenza_AH3,598
+Lower Southern,Influenza_ANotSubtyped,3
+Lower Southern,Influenza_B,636
+Lower Southern,Influenza_BNotLineageTyped,100
+Lower Southern,Influenza_BVictoria,121
+Lower Southern,Influenza_BYamagata,415
+Lower Southern,Influenza_Tested,3597
+Lower Southern,Influenza_Total,1795
+Northern,Influenza_A,88
+Northern,Influenza_AH1pdm09,16
+Northern,Influenza_AH3,69
+Northern,Influenza_ANotSubtyped,3
+Northern,Influenza_B,17
+Northern,Influenza_BNotLineageTyped,0
+Northern,Influenza_BVictoria,13
+Northern,Influenza_BYamagata,4
+Northern,Influenza_Tested,369
+Northern,Influenza_Total,105
+Upper Southern,Influenza_A,341
+Upper Southern,Influenza_AH1pdm09,121
+Upper Southern,Influenza_AH3,202
+Upper Southern,Influenza_ANotSubtyped,18
+Upper Southern,Influenza_B,252
+Upper Southern,Influenza_BNotLineageTyped,1
+Upper Southern,Influenza_BVictoria,74
+Upper Southern,Influenza_BYamagata,177
+Upper Southern,Influenza_Tested,1011
+Upper Southern,Influenza_Total,593

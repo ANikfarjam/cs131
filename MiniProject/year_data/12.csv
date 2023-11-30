@@ -1,0 +1,43 @@
+region,Influenza_Category,Count
+Bay Area,Influenza_A,632
+Bay Area,Influenza_AH1pdm09,123
+Bay Area,Influenza_AH3,499
+Bay Area,Influenza_ANotSubtyped,10
+Bay Area,Influenza_B,34
+Bay Area,Influenza_Tested,1292
+Bay Area,Influenza_Total,666
+California,Influenza_A,2531
+California,Influenza_AH1pdm09,639
+California,Influenza_AH3,1850
+California,Influenza_ANotSubtyped,42
+California,Influenza_B,166
+California,Influenza_Tested,5321
+California,Influenza_Total,2697
+Central,Influenza_A,158
+Central,Influenza_AH1pdm09,16
+Central,Influenza_AH3,127
+Central,Influenza_ANotSubtyped,15
+Central,Influenza_B,17
+Central,Influenza_Tested,531
+Central,Influenza_Total,175
+Lower Southern,Influenza_A,1176
+Lower Southern,Influenza_AH1pdm09,359
+Lower Southern,Influenza_AH3,814
+Lower Southern,Influenza_ANotSubtyped,3
+Lower Southern,Influenza_B,65
+Lower Southern,Influenza_Tested,1850
+Lower Southern,Influenza_Total,1241
+Northern,Influenza_A,156
+Northern,Influenza_AH1pdm09,33
+Northern,Influenza_AH3,122
+Northern,Influenza_ANotSubtyped,1
+Northern,Influenza_B,11
+Northern,Influenza_Tested,474
+Northern,Influenza_Total,167
+Upper Southern,Influenza_A,409
+Upper Southern,Influenza_AH1pdm09,108
+Upper Southern,Influenza_AH3,288
+Upper Southern,Influenza_ANotSubtyped,13
+Upper Southern,Influenza_B,39
+Upper Southern,Influenza_Tested,1174
+Upper Southern,Influenza_Total,448
